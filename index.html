@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Перспектива 24</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<!-- <link rel="stylesheet" href="css/slick-theme.css"> -->
+	<link rel="stylesheet" href="css/jquery.fancybox.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+	<header class="header" id="header">
+		<a href="" class="header__link">
+			<img src="img/bg-play.png" alt="Видео" class="header__link-img">
+		</a>
+		<div class="header__top">
+			<div class="container">
+				<div class="header__mobile-menu">
+					<img src="img/mobile-logo.png" alt="" class="mobile__logo-img">
+					<div class="mobile__contacts">
+						<a href="tel:+77772375551" class="mobile__menu-tel">+7(777) 237-55-51</a>
+						<div class="mobile__contacts-social">
+							<img src="img/mobile-viber.svg" alt="" class="mobile__social-img">
+							<img src="img/mobile-WhatsApp.svg" alt="" class="mobile__social-img">
+							<img src="img/mobile-telegram.svg" alt="" class="mobile__social-img">
+						</div>
+					</div>
+					<div class="burger-menu">
+						<input id="menu-toggle" type="checkbox" />
+						<label class="menu-btn" for="menu-toggle">
+							<span></span>
+						</label>
+						<ul class="menubox">
+							<li class="menu__li">Офис:<br>
+								<div class="img__wrapper">
+									<img class="flag-icon" src="img/flag.png" alt="Флаг страны" >
+									<a class="menu-item" id="menu-item02" href="#">ОАЭ - Дубай</a>
+								</div>
+							</li>
+							<li class="menu__li">Адрес:<a class="menu-item" href="#">БЦ "Turar", пр-т. Сейфуллина 502, оф. 205</a></li>
+							<li class="menu__li">E-mail:<a class="menu-item" href="#">email@mail.сom</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="header__top-wrapper">
+					<div class="office">
+						<p class="header__top-title">
+							Офис:
+						</p>
+						<div class="country-selection">
+							<img class="flag-icon" src="img/flag.png" alt="Флаг страны" >
+							<p class="country">ОАЭ-Дубай</p>
+							<img class="arrow" src="img/arrow.svg" alt="" >
+						</div>
+					</div>
+					<div class="address">
+						<p class="header__top-title">
+							Адрес:
+						</p>
+						<p class="header__top-text">
+							БЦ "Turar", пр-т. 
+						</p>
+						<p class="header__top-text">
+							Сейфуллина 502, оф. 205
+						</p>
+					</div>
+					<div class="e-mail">
+						<div class="header__top-title">
+							E-mail:
+						</div>
+						<div class="header__top-text">
+							<a href="mailto:email@mail.сom" class="header__top-mail">email@mail.сom</a>
+						</div>
+					</div>
+					<div class="phone">
+						<div class="header__top-title">
+							Телефон:
+						</div>
+						<a class="phone-number" href="tel:+77772375551">+7 (777) 237-55-51</a>
+						<ul class="social__list">
+							<li class="social__list-item">
+								<a href="#" class="social__list-link">
+									<img class="social-img" src="img/social/Viber.svg" alt="Viber" >
+								</a>
+							</li>
+							<li class="social__list-item">
+								<a href="#" class="social__list-link">
+									<img class="social-img" src="img/social/WhatsApp.svg" alt="WhatsApp" >
+								</a>
+							</li>
+							<li class="social__list-item">
+								<a href="#" class="social__list-link">
+									<img class="social-img" src="img/social/Telegram.svg" alt="Telegram" >
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="logo">
+						<img class="logo__img" src="img/logo.svg" alt="Логотип" >
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<div class="header__content-bg">
+			<div class="container">
+				<div class="header__content">
+					<h1 class="header__contetn-title">
+						<b>Простой путь к</b> выгодным и актуальным <b>объектам</b> без комиссии <b>или наценки!</b>
+					</h1>
+					<div class="objects">
+						<p class="objects-title">
+							Объекты для:
+						</p>
+						<div class="objects__content">
+							<div class="objects__contetn-item item01">
+								<p class="number">01</p>
+								<p class="objects-text text01">
+									Жизни и Резидентства
+								</p>
+							</div>
+							<div class="objects__contetn-item item02">
+								<p class="number">02</p>
+								<p class="objects-text text02">
+									Инвестиций
+								</p>
+							</div>
+							<div class="objects__contetn-item item03">
+								<p class="number">03</p>
+								<p class="objects-text text03">
+									Под сдачу в аренду
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="form-wrapper">
+				<form class="form01" action="#" method="post">
+
+					<input class="input-name" type="text" name="name"  placeholder="Введите ФИО" />
+
+					<input class="input-phone" type="tel" name="telephone" placeholder="Введите Телефон" />
+
+					<button class="form__btn">Задать вопрос</button> 
+					<img src="img/form/Rectangle1.png" alt="" class="rectangle01">
+					<img src="img/form/Rectangle2.png" alt="" class="rectangle02">
+					<img src="img/form/Rectangle3.png" alt="" class="rectangle03">
+				</form>
+			</div>
+		</div>
+	</header>
+
+	<section class="section">
+		<div class="container">
+			<h2 class="banefits__title">
+				Почему мы?
+			</h2>
+			<div class="benefits">
+				<div class="benefits__item benefits__item01">
+					<img src="img/benefits/benefit01.png" alt="Преимущество" class="benefits__item-img">
+					<div class="benefits__item-text">
+						Перелет для приобретения объекта на 2-ух персон и проживание на 3 дня – бесплатно!
+					</div>
+				</div>
+				<div class="benefits__item benefits__item02">
+					<img src="img/benefits/benefit02.png" alt="Преимущество" class="benefits__item-img">
+					<div class="benefits__item-text">
+						Доходность от инвестиций от 15 до 100% в год, а иногда и выше
+					</div>
+				</div>
+				<div class="benefits__item benefits__item03">
+					<img src="img/benefits/benefit03.png" alt="Преимущество" class="benefits__item-img">
+					<div class="benefits__item-text">
+						Доступ к закрытым стартам продаж
+					</div>
+				</div>
+				<div class="benefits__item benefits__item04">
+					<img src="img/benefits/benefit04.png" alt="Преимущество" class="benefits__item-img">
+					<div class="benefits__item-text">
+						Четкие планы инфраструктур и всегда актуальная информация в текущем времени
+					</div>
+				</div>
+				<div class="benefits__item benefits__item05">
+					<img src="img/benefits/benefit05.png" alt="Преимущество" class="benefits__item-img">
+					<div class="benefits__item-text">
+						Офис в Алматы и Дубай
+					</div>
+				</div>
+				<div class="benefits__item benefits__item06">
+					<img src="img/benefits/benefit06.png" alt="Преимущество" class="benefits__item-img">
+					<div class="benefits__item-text">
+						Прямой контакт с застройщиком
+					</div>
+				</div>
+				<div class="benefits__item benefits__item07">
+					<img src="img/benefits/benefit07.png" alt="Преимущество" class="benefits__item-img">
+					<div class="benefits__item-text">
+						Прямые Договоры с лучшими застройщиками Дубай
+					</div>
+				</div>
+				<div class="benefits__item benefits__item08">
+					<img src="img/benefits/benefit08.png" alt="Преимущество" class="benefits__item-img">
+					<div class="benefits__item-text">
+						Без комиссии или наценки!
+					</div>
+				</div>
+			</div>
+			<div class="btn-wrapper">
+				<a href="#" class="benefits__btn">Ещё</a>
+			</div>
+			<div class="form-wrapper">
+				<form class="form01 form02" action="#" method="post">
+
+					<input class="input-name" type="text" name="name"  placeholder="Введите ФИО" />
+
+					<input class="input-phone" type="tel" name="telephone" placeholder="Введите Телефон" />
+
+					<button class="form__btn">Задать вопрос</button> 
+					<img src="img/form/Rectangle1.png" alt="" class="rectangle01">
+					<img src="img/form/Rectangle2.png" alt="" class="rectangle02">
+					<img src="img/form/Rectangle3.png" alt="" class="rectangle03">
+				</form>
+			</div>
+		</div>
+	</section>
+	<section class="section">
+		<div class="container">
+			<div class="projects">
+				<h2 class="projects__title">
+					Текущие проекты в дубай
+				</h2>
+				<div class="project__content">
+					<div class="project__content-item">
+						<h3 class="project__content-title">
+							Central Park at City Walk
+						</h3>
+						<img src="img/projects/project01.jpg" alt="Проект" class="project__content-img">
+						<p class="project__content-text">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+						</p>
+					</div>
+					<div class="project__content-item">
+						<h3 class="project__content-title">
+							Central Park at City Walk
+						</h3>
+						<img src="img/projects/project01.jpg" alt="Проект" class="project__content-img">
+						<p class="project__content-text">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+						</p>
+					</div>
+					<div class="project__content-item">
+						<h3 class="project__content-title">
+							Central Park at City Walk
+						</h3>
+						<img src="img/projects/project01.jpg" alt="Проект" class="project__content-img">
+						<p class="project__content-text">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+						</p>
+					</div>
+				</div>
+				<div class="project__btn-wrapper">
+					<a href="#" class="project__content-btn">
+						презентация подробнее
+					</a>
+					<a href="#" class="project__content-btn">
+						доступные здесь объекты
+					</a>
+				</div>
+			</div>
+			<div class="credit">
+				<div class="credit__item credit__item01">
+					<img src="img/credit/credit01.png" alt="Кредит" class="credit__item-img">
+					<p class="credit__item-text">
+						Вы можете приобрести недвижимость по доступным ценам в кредит. Первоначальный взнос от 25%. Максимальный срок до 20 лет. Ставка по кредиту от 12% годовых.
+					</p>
+					<a href="" class="credit__item-link">
+						Подробнее <img src="img/credit/credit-arrow.svg" alt="Кредит" class="credit__link-img">
+					</a>
+				</div>
+				<div class="credit__item credit__item02">
+					<img src="img/credit/credit02.png" alt="Кредит" class="credit__item-img">
+					<p class="credit__item-text">
+						Вы можете приобрести недвижимость по доступным ценам в кредит. Первоначальный взнос от 25%. Максимальный срок до 20 лет. Ставка по кредиту от 12% годовых.
+					</p>
+					<a href="" class="credit__item-link credit__item03">
+						Подробнее <img src="img/credit/credit-arrow.svg" alt="Кредит" class="credit__link-img">
+					</a>
+				</div>
+				<div class="credit__item ">
+					<img src="img/credit/credit03.png" alt="Кредит" class="credit__item-img">
+					<p class="credit__item-text">
+						Вы можете приобрести недвижимость по доступным ценам в кредит. Первоначальный взнос от 25%. Максимальный срок до 20 лет. Ставка по кредиту от 12% годовых.
+					</p>
+					<a href="" class="credit__item-link">
+						Подробнее <img src="img/credit/credit-arrow.svg" alt="Кредит" class="credit__link-img">
+					</a>
+				</div>
+				<div class="credit__item ">
+					<img src="img/credit/credit03.png" alt="Кредит" class="credit__item-img">
+					<p class="credit__item-text">
+						Вы можете приобрести недвижимость по доступным ценам в кредит. Первоначальный взнос от 25%. Максимальный срок до 20 лет. Ставка по кредиту от 12% годовых.
+					</p>
+					<a href="" class="credit__item-link">
+						Подробнее <img src="img/credit/credit-arrow.svg" alt="Кредит" class="credit__link-img">
+					</a>
+				</div>
+				<div class="credit__item ">
+					<img src="img/credit/credit03.png" alt="Кредит" class="credit__item-img">
+					<p class="credit__item-text">
+						Вы можете приобрести недвижимость по доступным ценам в кредит. Первоначальный взнос от 25%. Максимальный срок до 20 лет. Ставка по кредиту от 12% годовых.
+					</p>
+					<a href="" class="credit__item-link">
+						Подробнее <img src="img/credit/credit-arrow.svg" alt="Кредит" class="credit__link-img">
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section">
+		<div class="facts-wrapper">
+			<div class="container">
+				<div class="facts">
+					<h2 class="facts__title-mobile">
+						Факты о недвижимости <span class="facts__color-text">в Дубай</span>
+					</h2>
+					<img src="img/img.png" alt="" class="facts__img-mobile">
+					<div class="facts__content-wrapper">
+						<h2 class="facts__title">
+							Факты о недвижимости <span class="facts__color-text">в Дубай</span>
+						</h2>
+						
+						<a href="#" class="facts__play-mobile">
+							<img src="img/play.png" alt="" class="facts__play-img-mobile">
+						</a>
+						<div class="facts__content">
+							<img src="img/ellipse.png" alt="" class="facts__content-img">
+							<p class="facts__content-text">
+								Цена на объекты ниже, чем в Алматы в Бизнес и Premium сегментах
+							</p>
+							<img src="img/ellipse.png" alt="" class="facts__content-img">
+							<p class="facts__content-text">
+								Низкая конкуренция на вторичном рынке позволяет продавать квартиры с высокой доходностью
+							</p>
+							<img src="img/ellipse.png" alt="" class="facts__content-img">
+							<p class="facts__content-text">
+								Часть районов отведена только для коренных жителей ОАЭ и закрыта для покупки туристам и иностранным гражданам, однако некоторые застройщики
+							</p>
+							<img src="img/ellipse.png" alt="" class="facts__content-img">
+							<p class="facts__content-text">
+								Выпускают проекты в таких районах 
+							</p>
+							<img src="img/ellipse.png" alt="" class="facts__content-img">
+							<p class="facts__content-text">
+								Доходность может зависеть от курса доллара (курс дирхама стабилен к доллару с 1997года.)
+							</p>
+							<img src="img/ellipse.png" alt="" class="facts__content-img">
+							<p class="facts__content-text">
+								Любое строительство занимает 2-3 года (исключение - самые высокие здания в мире)
+							</p>
+						</div>
+						<div class="btn-wrapper facts-btn">
+							<a href="#" class="benefits__btn">Все факты</a>
+						</div>
+					</div>
+					<div class="form-wrapper">
+						<form class="form01 form03" action="#" method="post">
+							<input class="input-name" type="text" name="name"  placeholder="Введите ФИО" />
+							<input class="input-phone" type="tel" name="telephone" placeholder="Введите Телефон" />
+							<button class="form__btn">Задать вопрос</button> 
+							<img src="img/form/Rectangle1.png" alt="" class="rectangle01">
+							<img src="img/form/Rectangle2.png" alt="" class="rectangle02">
+							<img src="img/form/Rectangle3.png" alt="" class="rectangle03">
+						</form>
+					</div>
+				</div>
+			</div>
+			<a href="#" class="facts__play">
+				<img src="img/play.png" alt="" class="facts__play-img">
+			</a>
+		</div>
+	</section>
+	<section class="section">
+		<div class="container">
+			<div class="partners">
+				<h2 class="partners__titel">
+					Партнеры
+				</h2>
+				<div class="partners__slider">
+					<div class="partners__slider-item">
+						<img src="img/partners-slider/img1.png" alt="" class="partners__slider-img">
+					</div>
+					<div class="partners__slider-item">
+						<img src="img/partners-slider/img2.png" alt="" class="partners__slider-img">
+					</div>
+					<div class="partners__slider-item">
+						<img src="img/partners-slider/img3.png" alt="" class="partners__slider-img">
+					</div>
+					<div class="partners__slider-item">
+						<img src="img/partners-slider/img4.png" alt="" class="partners__slider-img">
+					</div>
+					<div class="partners__slider-item">
+						<img src="img/partners-slider/img3.png" alt="" class="partners__slider-img">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__wrapper">
+				<div class="footer__menu">
+					<h4 class="footer__title">
+						Меню:
+					</h4>
+					<ul class="footer__menu-list">
+						<li class="menu__list-item">
+							<a href="#" class="footer__link">
+								Почему мы?
+							</a>
+						</li>
+						<li class="menu__list-item">
+							<a href="#" class="footer__link">
+								Факты о недвижимости
+							</a>
+						</li>
+						<li class="menu__list-item">
+							<a href="#" class="footer__link">
+								Партнеры
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__e-mail">
+					<h4 class="footer__title">
+						E-mail:
+					</h4>
+					<a href="mailto:email@mail.сom" class="footer__link">email@mail.сom</a>
+				</div>
+				<div class="footer__social">
+					<a href="#" class="footer__link">
+						<img src="img/social/viber.svg" alt="" class="footer__social-img">
+					</a>
+					<a href="#" class="footer__link">
+						<img src="img/social/whatsapp.svg" alt="" class="footer__social-img">
+					</a>
+					<a href="#" class="footer__link">
+						<img src="img/social/telegram.svg" alt="" class="footer__social-img">
+					</a>
+				</div>
+				<div class="footer__phone">
+					<h4 class="footer__title">
+						Телефон:
+					</h4>
+					<a href="tel:+77772375551" class="footer__link">
+						+7(777) 237-55-51
+					</a>
+				</div>
+				<div class="footer__logo">
+					<img src="img/logo.svg" alt="Логотип" class="footer__logo-img">
+					<p class="footer__logo-text">
+						© 2022 Перспектива 24. Все права защищены.
+					</p>
+				</div>
+				<div class="footer__text-mobile">
+					<p class="footer__text">
+						© 2022 Перспектива 24. Все права защищены.
+					</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<!-- <script src="js/slick.js"></script> -->
+	<script src="js/slick.min.js"></script>
+
+	<script src="js/jquery.fancybox.min.js"></script>
+	<script src="js/main.js"></script> 
+</body>
+</html>
