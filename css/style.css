@@ -904,7 +904,7 @@ button{
 	}
 }
 
-@media	(max-width: 1560px){
+@media	(max-width: 1530px){
 	.facts__img-mobile{
 		display: block;
 		position: relative;
