@@ -752,7 +752,7 @@ button{
 	background-image: url(../img/frame11.png);
 	background-repeat: no-repeat;
 	background-size: contain;
-	background-position: 700px center;
+	background-position: right center;
 
 }
 
@@ -904,7 +904,7 @@ button{
 	}
 }
 
-@media	(max-width: 1530px){
+@media	(max-width: 1560px){
 	.facts__img-mobile{
 		display: block;
 		position: relative;
